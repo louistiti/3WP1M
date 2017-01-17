@@ -1,0 +1,7 @@
+.idea/
+node_modules/
+
+.DS_Store
+Thumbs.db
+debug.log
+npm-debug.log
