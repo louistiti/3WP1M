@@ -22,17 +22,12 @@ This repository contains 4 projects relative to some videos on [my YouTube chann
 	$ npm install
 	```
 
-5. (Install Gulp in a globally way if it's not already done)
+5. Run
 	```sh
-	$ npm install -g gulp
+	$ npm start
 	```
 
-6. Execute Gulp
-	```sh
-	$ gulp
-	```
-
-7. Select the project you would like to run
+6. Select the project you would like to run
 	```sh
 	> project1
 	  project2
@@ -40,7 +35,7 @@ This repository contains 4 projects relative to some videos on [my YouTube chann
 	  project4
 	```
 
-8. The project is automatically executed in your browser (http://localhost:3000) with a live reload when a modification is asked
+7. The project is automatically executed in your browser (http://localhost:3000) with a live reload when a modification is asked
 
 # Author
 **Louis Grenard** : https://www.louistiti.fr

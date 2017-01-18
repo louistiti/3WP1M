@@ -22,17 +22,12 @@ Ce dépôt contient 4 projets en rapport avec une série sur [ma chaîne YouTube
 	$ npm install
 	```
 
-5. (Installer Gulp globalement si ce n'est pas déjà fait)
+5. Lancer
 	```sh
-	$ npm install -g gulp
+	$ npm start
 	```
-
-6. Lancer Gulp
-	```sh
-	$ gulp
-	```
-
-7. Sélectionner le projet à lancer
+	
+6. Sélectionner le projet à lancer
 	```sh
 	> project1
 	  project2
@@ -40,7 +35,7 @@ Ce dépôt contient 4 projets en rapport avec une série sur [ma chaîne YouTube
 	  project4
 	```
 
-8. Le projet est automatiquement lancé dans votre navigateur (http://localhost:3000) avec un rafraîchissement temps réel lors d'une modification
+7. Le projet est automatiquement lancé dans votre navigateur (http://localhost:3000) avec un rafraîchissement temps réel lors d'une modification
 
 # Auteur
 **Louis Grenard** : https://www.louistiti.fr
