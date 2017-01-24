@@ -1219,103 +1219,112 @@ body {
   font-weight: 400;
   height: 100vh;
   color: #FFF; }
-  body main {
+
+main {
+  position: relative;
+  padding: 32px 64px;
+  top: 16%; }
+
+#background {
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.title {
+  font-style: normal;
+  font-size: 2.5em;
+  font-weight: 500;
+  padding-bottom: 8px;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.2); }
+
+.title-2 {
+  font-size: 1.9em; }
+
+section {
+  margin: 32px 0; }
+
+#introduction {
+  font-style: italic;
+  margin: 0 auto;
+  line-height: 32px;
+  text-align: center; }
+  @media (min-width: 992px) {
+    #introduction {
+      width: 900px;
+      text-align: justify; } }
+  #introduction .flex-right {
+    width: 364px; }
+    #introduction .flex-right i {
+      font-style: italic; }
+    #introduction .flex-right strong {
+      font-weight: 600; }
+
+#project-n-skill {
+  text-align: center; }
+  #project-n-skill .wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+    -ms-flex-flow: column;
+        flex-flow: column; }
+    @media (min-width: 768px) {
+      #project-n-skill .wrapper {
+        width: 564px;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+        height: 456px; } }
+  #project-n-skill .flex-right .wrapper {
     position: relative;
-    padding: 32px 64px;
-    top: 16%; }
-    body main #background {
-      position: fixed;
-      z-index: -10;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-    body main .title {
-      font-style: normal;
-      font-size: 2.5em;
-      font-weight: 500;
-      padding-bottom: 8px;
-      text-shadow: 0 2px 1px rgba(0, 0, 0, 0.2); }
-    body main .title-2 {
-      font-size: 1.9em; }
-    body main section {
-      margin: 32px 0; }
-    body main #introduction {
-      font-style: italic;
-      margin: 0 auto;
-      line-height: 32px;
-      text-align: center; }
-      @media (min-width: 992px) {
-        body main #introduction {
-          width: 900px;
-          text-align: justify; } }
-      body main #introduction .flex-right {
-        width: 364px; }
-        body main #introduction .flex-right i {
-          font-style: italic; }
-        body main #introduction .flex-right strong {
-          font-weight: 600; }
-    body main #project-n-skill {
-      text-align: center; }
-      body main #project-n-skill .wrapper {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-        -ms-flex-flow: column;
-            flex-flow: column; }
-        @media (min-width: 768px) {
-          body main #project-n-skill .wrapper {
-            width: 564px;
-            -ms-flex-flow: column wrap;
-                flex-flow: column wrap;
-            height: 456px; } }
-      body main #project-n-skill .flex-right .wrapper {
-        position: relative;
-        height: 456px; }
-        @media (min-width: 768px) {
-          body main #project-n-skill .flex-right .wrapper {
-            width: 512px;
-            overflow: hidden; } }
-        body main #project-n-skill .flex-right .wrapper:hover .skill {
-          animation-play-state: paused; }
-        body main #project-n-skill .flex-right .wrapper:hover:after {
-          position: absolute;
-          content: 'Pause';
-          color: #EEE;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
-          font-size: 3em; }
-          @media (min-width: 768px) {
-            body main #project-n-skill .flex-right .wrapper:hover:after {
-              font-size: 8em; } }
-    body main #contact a {
-      color: inherit;
-      text-decoration: none; }
-      body main #contact a:hover {
-        text-decoration: underline; }
-    body main #contact .social {
-      display: inline-block;
-      width: 32px;
-      height: 32px;
-      background-color: #FFF;
-      margin-right: 16px;
-      border-radius: 50%;
-      box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
-      transition: transform 0.15s;
-      cursor: pointer; }
-      body main #contact .social:last-child {
-        margin-right: 0; }
-      body main #contact .social.social-twitter {
-        background: #FFF url(../images/socials/twitter.png) center no-repeat;
-        background-size: 52px 52px; }
-      body main #contact .social.social-github {
-        background: #FFF url(../images/socials/github.png) center no-repeat;
-        background-size: 52px 52px; }
-      body main #contact .social.social-youtube {
-        background: #FFF url(../images/socials/youtube.png) center no-repeat;
-        background-size: 52px 52px; }
-      body main #contact .social:hover {
-        transform: scale(1.2); }
+    height: 456px; }
+    @media (min-width: 768px) {
+      #project-n-skill .flex-right .wrapper {
+        width: 512px;
+        overflow: hidden; } }
+    #project-n-skill .flex-right .wrapper:hover .skill {
+      animation-play-state: paused; }
+    #project-n-skill .flex-right .wrapper:hover:after {
+      position: absolute;
+      content: 'Pause';
+      color: #EEE;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+      font-size: 3em; }
+      @media (min-width: 768px) {
+        #project-n-skill .flex-right .wrapper:hover:after {
+          font-size: 8em; } }
+
+#contact a {
+  color: inherit;
+  text-decoration: none; }
+  #contact a:hover {
+    text-decoration: underline; }
+
+#contact .social {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: #FFF;
+  margin-right: 16px;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 0.15s;
+  cursor: pointer; }
+  #contact .social:last-child {
+    margin-right: 0; }
+  #contact .social.social-twitter {
+    background: #FFF url(../images/socials/twitter.png) center no-repeat;
+    background-size: 52px 52px; }
+  #contact .social.social-github {
+    background: #FFF url(../images/socials/github.png) center no-repeat;
+    background-size: 52px 52px; }
+  #contact .social.social-youtube {
+    background: #FFF url(../images/socials/youtube.png) center no-repeat;
+    background-size: 52px 52px; }
+  #contact .social:hover {
+    transform: scale(1.2); }
