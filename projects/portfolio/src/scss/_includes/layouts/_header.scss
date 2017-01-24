@@ -1,0 +1,37 @@
+/**
+ * Header style
+ */
+
+header {
+    @include breakpoint(md) {
+        position: absolute;
+        top: -40%;
+        left: 50%;
+        width: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        border-radius: 50%;
+        border: $border;
+
+    }
+
+    &:after {
+        position: absolute;
+        content: ' ';
+        border-radius: 50%;
+        border: $border;
+        background: url(https://static-01.louistiti.fr/images/photo.jpg) 80% 0 no-repeat;
+        width: 128px;
+        height: 128px;
+        transform: translate(-50%, -50%);
+        top: 10%;
+        left: 50%;
+
+        @include breakpoint(md) {
+            top: 100%;
+
+        }
+
+    }
+
+}

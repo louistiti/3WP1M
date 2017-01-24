@@ -1,0 +1,67 @@
+/**
+ * Select style (to change the background)
+ */
+
+#select {
+    position: fixed;
+    z-index: 20;
+    background-color: #444;
+    top: -88px;
+    left: 15%;
+    padding: 12px;
+    padding-top: 100px;
+    border-radius: 0 0 $border-radius $border-radius;
+    border: 4px solid #FFF;
+    border-top: none;
+    box-shadow: $shadow;
+    animation: pull 20s ease-in infinite;
+
+    @keyframes pull {
+        1% {
+            transform: translateY(30px);
+        }
+        2% {
+            transform: translateY(0);
+        }
+        2.5% {
+            transform: translateY(10px);
+        }
+        3% {
+            transform: translateY(0);
+        }
+        3.5% {
+            transform: translateY(6px);
+        }
+        4% {
+            transform: translateY(0);
+        }
+    }
+
+    .background {
+        border-radius: $border-radius;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        margin-right: 6px;
+        transition: transform $animation-duration, border $animation-duration;
+
+        &:hover, &.selected-background {
+            transform: scale(1.2);
+            border: 2px solid #FFF;
+
+        }
+
+        &:last-child {
+            margin-right: 0;
+
+        }
+
+    }
+
+}
+
+.background-1 { background: $background-1; }
+.background-2 { background: $background-2 }
+.background-3 { background: $background-3; }
+.background-4 { background: $background-4; }

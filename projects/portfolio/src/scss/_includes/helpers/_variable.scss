@@ -1,0 +1,36 @@
+/**
+ * Variables here
+ */
+
+$font-size	  		        : 16px;
+$font		  	 	        : 'Roboto', sans-serif;
+$border-radius	 	        : 2px;
+$shadow                     : 0 2px 1px rgba(0, 0, 0, .2);
+$animation-duration         : .15s;
+
+$mini-space                 : 16px;
+$small-space                : $mini-space * 2;
+$medium-space               : $mini-space * 4;
+$large-space                : $mini-space * 8;
+
+$blue-1                     : #1A2980;
+$blue-2                     : #333399;
+$blue-3                     : #26D0CE;
+$blue-4                     : #16BFFD;
+
+$red-1                      : #D31027;
+$red-2                      : #EA384D;
+
+$pink-1                     : #FF00CC;
+$pink-2                     : #EF629F;
+
+$beige-1                    : #EECDA3;
+
+$background-1               : linear-gradient(45deg, $blue-1, $blue-3);
+$background-2               : linear-gradient(45deg, $red-1, $red-2);
+$background-3               : linear-gradient(45deg, $blue-2, $pink-1);
+$background-4               : linear-gradient(45deg, $pink-2, $beige-1);
+
+$border                     : 4px solid #FFF;
+
+$wrapper-skill-width        : 512px;

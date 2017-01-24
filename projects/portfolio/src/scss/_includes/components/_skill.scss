@@ -1,0 +1,78 @@
+/**
+ * Skills style
+ */
+
+$skill-size: 72px;
+$translateX: -($wrapper-skill-width  - $skill-size);
+
+.skill {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: $skill-size;
+    height: $skill-size;
+    background-color: #FFF;
+    border-radius: 50%;
+    box-shadow: $shadow;
+    opacity: 0;
+    transform: scale(.1, .1);
+    font-size: .8em;
+    text-align: center;
+
+    @keyframes move {
+        25% {
+            opacity: 1;
+            transform: translate($translateX * 0.25, 20px); /* 141 = 564 * 0.25 */
+        }
+        50% {
+            opacity: 1;
+            transform: translate($translateX * 0.5, 5px);
+        }
+        75% {
+            opacity: 1;
+            transform: translate($translateX * 0.75, 20px);
+        }
+        100% {
+            transform: translate($translateX, 0);
+        }
+
+    }
+
+    &:after {
+        display: inline-block;
+        position: relative;
+        top: $skill-size;
+        transition: opacity $animation-duration, transform $animation-duration;
+        opacity: 0;
+        padding: 2px 4px;
+        color: #333;
+        background-color: #FFF;
+        border-radius: 4px;
+        box-shadow: $shadow;
+
+    }
+
+    /* must have the same duration for each line */
+    &:nth-child(1) { z-index: 70; animation: move 13s linear infinite; background: #FFF url(../images/skills/html.png) center no-repeat; background-size: 92px 92px; &:after { content: 'HTML5'; } }
+    &:nth-child(2) { z-index: 70; animation: move 13s 4s linear infinite; background: #FFF url(../images/skills/css.png) center no-repeat; background-size: 92px 92px; &:after { content: 'CSS3'; } }
+    &:nth-child(3) { z-index: 70; animation: move 13s 8s linear infinite; background: #FFF url(../images/skills/npm.png) center no-repeat; background-size: 72px 28px; &:after { content: 'npm'; } }
+    &:nth-child(4) { z-index: 60; top: $skill-size; animation: move 12s linear infinite; background: #FFF url(../images/skills/javascript.png) center no-repeat; background-size: 72px 72px; &:after { content: 'JavaScript'; }  }
+    &:nth-child(5) { z-index: 60; top: $skill-size; animation: move 12s 8s linear infinite; background: #FFF url(../images/skills/babel.png) center no-repeat; background-size: 72px 72px; &:after { content: 'Babel'; } }
+    &:nth-child(6) { z-index: 50; top: $skill-size * 1.5; animation: move 14s 5s linear infinite; background: #FFF url(../images/skills/gulp.png) center no-repeat; background-size: 32px 72px; &:after { content: 'gulp.js'; } }
+    &:nth-child(7) { z-index: 50; top: $skill-size * 1.5; animation: move 14s 8s linear infinite; background: #FFF url(../images/skills/node.png) center no-repeat; background-size: 72px 72px; &:after { content: 'Node.js'; } }
+    &:nth-child(8) { z-index: 40; top: $skill-size * 2; animation: move 12s 2s linear infinite; background: #FFF url(../images/skills/php.png) center no-repeat; background-size: 60px 60px; &:after { content: 'PHP'; } }
+    &:nth-child(9) { z-index: 40; top: $skill-size * 2; animation: move 12s 5s linear infinite; background: #FFF url(../images/skills/python.png) center no-repeat; background-size: 72px 72px; &:after { content: 'Python'; } }
+    &:nth-child(10) { z-index: 30; top: $skill-size * 3; animation: move 14s 1s linear infinite; background: #FFF url(../images/skills/perl.png) center no-repeat; background-size: 72px 72px; &:after { content: 'Perl'; } }
+    &:nth-child(11) { z-index: 30; top: $skill-size * 3; animation: move 14s 7s linear infinite; background: #FFF url(../images/skills/git.png) center no-repeat; background-size: 98px 98px; &:after { content: 'Git'; } }
+    &:nth-child(12) { z-index: 20; top: $skill-size * 4; animation: move 12s 4s linear infinite; background: #FFF url(../images/skills/yarn.png) center no-repeat; background-size: 72px 72px; &:after { content: 'Yarn'; } }
+    &:nth-child(13) { z-index: 20; top: $skill-size * 4; animation: move 12s 9s linear infinite; background: #FFF url(../images/skills/angular.png) center no-repeat; background-size: 86px 86px; &:after { content: 'Angular'; } }
+    &:nth-child(14) { z-index: 10; top: $skill-size * 4.5; animation: move 13s 1s linear infinite; background: #FFF url(../images/skills/mocha.png) center no-repeat; background-size: 72px 72px; &:after { content: 'Mocha'; } }
+    &:nth-child(15) { z-index: 10; top: $skill-size * 4.5; animation: move 13s 5s linear infinite; background: #FFF url(../images/skills/ionic.png) center no-repeat; background-size: 72px 72px; &:after { content: 'Ionic'; } }
+
+    &:hover:after {
+        opacity: 1;
+        transform: translateY(4px);
+
+    }
+}

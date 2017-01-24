@@ -9,7 +9,7 @@ import prompt from 'gulp-prompt';
 import runsequence from 'run-sequence';
 
 const projects = [
-    'project1',
+    'portfolio',
     'project2',
     'project3',
     'project4'
@@ -30,7 +30,7 @@ gulp.task('init', () =>
         }))
 );
 
-gulp.task('serve', ['style'], () => {
+gulp.task('serve', ['style', 'script', 'image'], () => {
     browsersync.init({
         host: devip(),
         server: project,
@@ -38,6 +38,7 @@ gulp.task('serve', ['style'], () => {
     });
 
     gulp.watch(`${project}/src/scss/**/*.scss`, ['style']);
+    gulp.watch(`${project}/src/js/**/*.js`, ['script']);
     gulp.watch(`${project}/*.html`).on('change', browsersync.reload);
 });
 
@@ -46,6 +47,18 @@ gulp.task('style', () =>
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({ browsers: ['last 2 version'] }))
         .pipe(gulp.dest(`${project}/dist/css`))
+        .pipe(browsersync.stream())
+);
+
+gulp.task('script', () =>
+    gulp.src(`${project}/src/js/**/*.js`)
+        .pipe(gulp.dest(`${project}/dist/js`))
+        .pipe(browsersync.stream())
+);
+
+gulp.task('image', () =>
+    gulp.src(`${project}/src/images/**/*`)
+        .pipe(gulp.dest(`${project}/dist/images`))
         .pipe(browsersync.stream())
 );
 

@@ -1,0 +1,143 @@
+/**
+ * Useful classes and others great stuffs
+ */
+
+.radius {
+ 	border-radius: $border-radius;
+}
+
+.left {
+	float: left !important;
+}
+
+.right {
+	float: right !important;
+}
+
+.center {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.clear {
+	clear: both;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    align-items: flex-start;
+}
+
+.flex-left {
+    margin-right: auto;
+}
+
+.flex-right {
+    margin-left: auto;
+}
+
+.animate {
+    transition-duration: $animation-duration;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.block {
+    display: block !important;
+}
+.inline-block {
+    display: inline-block !important;
+}
+.inline {
+    display: inline !important;
+}
+
+.mini-space-x {
+    padding: 0 $mini-space !important;
+}
+.small-space-x {
+    padding: 0 $small-space !important;
+}
+.medium-space-x {
+    padding: 0 $medium-space !important;
+}
+.large-space-x {
+    padding: 0 $large-space !important;
+}
+
+.mini-space-y {
+    padding: $mini-space 0 !important;
+}
+.small-space-y {
+    padding: $small-space 0 !important;
+}
+.medium-space-y {
+    padding: $medium-space 0 !important;
+}
+.large-space-y {
+    padding: $large-space 0 !important;
+}
+
+.mini-space-right {
+    padding-right: $mini-space !important;
+}
+.small-space-right {
+    padding-right: $small-space !important;
+}
+.medium-space-right {
+    padding-right: $medium-space !important;
+}
+.large-space-right {
+    padding-right: $large-space !important;
+}
+
+.mini-space-left {
+    padding-left: $mini-space !important;
+}
+.small-space-left {
+    padding-left: $small-space !important;
+}
+.medium-space-left {
+    padding-left: $medium-space !important;
+}
+.large-space-left {
+    padding-left: $large-space !important;
+}
+
+.mini-space-top {
+    padding-top: $mini-space !important;
+}
+.small-space-top {
+    padding-top: $small-space !important;
+}
+.medium-space-top {
+    padding-top: $medium-space !important;
+}
+.large-space-top {
+    padding-top: $large-space !important;
+}
+
+.mini-space-bottom {
+    padding-bottom: $mini-space !important;
+}
+.small-space-bottom {
+    padding-bottom: $small-space !important;
+}
+.medium-space-bottom {
+    padding-bottom: $medium-space !important;
+}
+.large-space-bottom {
+    padding-bottom: $large-space !important;
+}

@@ -1,0 +1,183 @@
+@import "_includes/base/all";
+
+body {
+    font-family: $font;
+    font-size: $font-size;
+    font-weight: 400;
+    height: 100vh;
+    color: #FFF;
+
+    main {
+        position: relative;
+        padding: $small-space $medium-space;
+        top: 16%;
+
+        #background {
+            position: fixed;
+            z-index: -10;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .title {
+            font-style: normal;
+            font-size: 2.5em;
+            font-weight: 500;
+            padding-bottom: $small-space / 4;
+            text-shadow: $shadow;
+
+        }
+
+        .title-2 {
+            font-size: 1.9em;
+
+        }
+
+        section {
+            margin: $small-space 0;
+
+        }
+
+        #introduction {
+            font-style: italic;
+            margin: 0 auto;
+            line-height: 32px;
+            text-align: center;
+            @include breakpoint(md) {
+                width: 900px;
+                text-align: justify;
+            }
+
+            .flex-right {
+                width: 364px;
+
+                i {
+                    font-style: italic;
+
+                }
+
+                strong {
+                    font-weight: 600;
+
+                }
+
+            }
+
+        }
+
+        #project-n-skill {
+            text-align: center;
+
+            .wrapper {
+                display: flex;
+                flex-grow: 1;
+                flex-flow: column;
+                @include breakpoint(sm) {
+                    width: 564px;
+                    flex-flow: column wrap;
+                    height: 456px;
+                }
+
+            }
+
+            .flex-right {
+
+                .wrapper {
+                    position: relative;
+                    height: 456px;
+
+                    @include breakpoint(sm) {
+                        width: $wrapper-skill-width;
+                        overflow: hidden;
+                    }
+
+                    &:hover {
+                        .skill {
+                            animation-play-state: paused;
+
+                        }
+
+                        &:after {
+                            position: absolute;
+                            content: 'Pause';
+                            color: #EEE;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            text-shadow: $shadow;
+                            font-size: 3em;
+                            @include breakpoint(sm) {
+                                font-size: 8em;
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        #contact {
+            a {
+                color: inherit;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+
+                }
+
+            }
+
+            .social {
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                background-color: #FFF;
+                margin-right: $mini-space;
+                border-radius: 50%;
+                box-shadow: $shadow;
+                transition: transform $animation-duration;
+                cursor: pointer;
+
+                &:last-child {
+                    margin-right: 0;
+
+                }
+
+                &.social-twitter {
+                    background: #FFF url(../images/socials/twitter.png) center no-repeat;
+                    background-size: 52px 52px;
+
+                }
+
+                &.social-github {
+                    background: #FFF url(../images/socials/github.png) center no-repeat;
+                    background-size: 52px 52px;
+
+                }
+
+                &.social-youtube {
+                    background: #FFF url(../images/socials/youtube.png) center no-repeat;
+                    background-size: 52px 52px;
+
+                }
+
+                &:hover {
+                    transform: scale(1.2);
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

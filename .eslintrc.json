@@ -11,5 +11,8 @@
         "comma-dangle": "off",
         "no-console": "off",
         "no-param-reassign": "off"
+    },
+    "env": {
+        "browser": true
     }
 }
