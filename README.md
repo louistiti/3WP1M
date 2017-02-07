@@ -48,8 +48,7 @@ This repository contains 3 projects relative to some videos on [my YouTube chann
 # Projects demos
 ## #1 Portfolio
 ### [LINK](https://www.louistiti.fr/demo/3-projets-1-mois/portfolio/)
-
-![Portfolio demo](https://media.giphy.com/media/l3q2DJhAtJzL4Gr16/source.gif)
+### [GIF](https://media.giphy.com/media/l3q2DJhAtJzL4Gr16/source.gif)
 
 ## #2 Pokédex
 ### [LINK](https://www.louistiti.fr/demo/3-projets-1-mois/pokedex/)
