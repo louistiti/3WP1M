@@ -1,0 +1,65 @@
+/**
+ * Loader style
+ */
+
+#loader {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    width: 100%;
+    height: 100%;
+    transition: opacity $animation-duration * 2;
+
+    &.hidden {
+        opacity: 0;
+        pointer-events: none;
+
+    }
+
+    .pokeball {
+        position: fixed;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 42px;
+        height: 42px;
+        animation: shake 1.5s linear infinite;
+
+        &:after {
+            height: 2px;
+
+        }
+
+        .pokeball-button {
+            top: calc(50% - 8px);
+            left: calc(50% - 8px);
+            width: 15px;
+            height: 15px;
+            box-shadow: 0 0 0 2px #333, inset 0 0 0 1px $grey;
+            animation: indicate .4s linear infinite alternate;
+
+        }
+
+    }
+
+    @keyframes shake {
+        5%, 28% {
+            transform: rotate(10deg) translate(-45%, -45%);
+
+        }
+        15% {
+            transform: rotate(-10deg) translate(-55%, -60%);
+
+        }
+    }
+
+    @keyframes indicate {
+        100% {
+            background-color: $red;
+
+        }
+    }
+
+}

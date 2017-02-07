@@ -1,11 +1,11 @@
-4 Projets Web en 1 Mois
-=========
+3 Projets Web en 1 Mois
+=======================
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/Louistiti/Uber-Like/blob/master/LICENSE.md)
 
-🇬🇧 [Available in English](https://github.com/Louistiti/4WP1M/blob/master/README.md)
+🇬🇧 [Available in English](https://github.com/Louistiti/3WP1M/blob/master/README.md)
 
-Ce dépôt contient 4 projets en rapport avec une série sur [ma chaîne YouTube](https://www.youtube.com/c/louistitifr). Elle s'adresse aux personnes souhaitant pratiquer d'avantage à travers des projets web.
+Ce dépôt contient 3 projets en rapport avec une série sur [ma chaîne YouTube](https://www.youtube.com/c/louistitifr). Elle s'adresse aux personnes souhaitant pratiquer d'avantage à travers des projets web.
 
 # Installer
 1. Cloner ce dépôt GitHub
@@ -14,7 +14,7 @@ Ce dépôt contient 4 projets en rapport avec une série sur [ma chaîne YouTube
 
 3. Se rendre dans le répertoire
 	```sh
-	$ cd 4WP1M
+	$ cd 3WP1M
 	```
 
 4. Installer les dépendances de développement
@@ -32,20 +32,31 @@ Ce dépôt contient 4 projets en rapport avec une série sur [ma chaîne YouTube
 	> project1
 	  project2
 	  project3
-	  project4
 	```
 
 7. Le projet est automatiquement lancé dans votre navigateur (http://localhost:3000) avec un rafraîchissement temps réel lors d'une modification
 
-# Projets
-## #1 Portfolio
-### [DÉMO](https://www.louistiti.fr/demo/4-projets-1-mois/portfolio/)
+8. Compiler
+	```sh
+	$ npm run build
+	```
 
-## #2 ?
+9. Sélectionner le projet à compiler
+
+10. Le projet est compilé : HTML, CSS, JavaScript minifié, images compressés, cache busting, sourcemaps
+
+# Démos des projets
+## #1 Portfolio
+### [LIEN](https://www.louistiti.fr/demo/3-projets-1-mois/portfolio/)
+
+![Démo portfolio](https://media.giphy.com/media/l3q2AD8N3pohZseac/source.gif)
+
+## #2 Pokédex
+### [LIEN](https://www.louistiti.fr/demo/3-projets-1-mois/pokedex/)
+
+![Démo pokédex](https://media.giphy.com/media/l3q2XXHpD96XaUEEM/source.gif)
 
 ## #3 ?
-
-## #4 ?
 
 # Auteur
 **Louis Grenard** : https://www.louistiti.fr

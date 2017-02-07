@@ -1,0 +1,129 @@
+@import "_includes/base/all";
+
+body {
+    font-family: $font;
+    font-size: $font-size;
+    font-weight: 400;
+    color: #656565;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+ul {
+    list-style: none;
+
+}
+
+main {
+    padding-top: 51px; /* Header height */
+
+}
+
+.pokemon {
+    opacity: 0;
+    display: block;
+    font-size: 1.05em;
+    border-bottom: 1px solid $grey;
+    animation: fadeIn 2s forwards;
+    transform: translateY(0);
+
+    @for $i from 1 through 151 {
+        $delay: $i * .07s;
+
+        &.for-#{$i} {
+            animation-delay: $delay;
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            transform: translateY(5px);
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    &:last-child {
+        border-bottom: none;
+
+    }
+
+    .pokemon-info, .pokemon-id {
+        padding: 10px $small-space;
+
+    }
+
+    .pokemon-id {
+        float: left;
+        width: 121px;
+        text-align: center;
+        border-right: 1px solid $grey;
+        color: $grey;
+
+    }
+
+    img {
+        display: block;
+        max-width: 56px;
+        margin-bottom: 4px;
+
+    }
+
+    .pokemon-info {
+        display: inline-block;
+        width: calc(100% - 121px);
+        height: 100px;
+
+        .pokemon-info-name {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 132px;
+            margin-top: 30px; /* (100(height) / 2) - 20(padding) */
+
+        }
+
+        .pokemon-info-type {
+            display: inline-block;
+            margin-top: 12px;
+            width: 26px;
+            height: 4px;
+            border-radius: 2px;
+            background-color: #000;
+
+            &.fighting { background-color: #A45437; }
+            &.dragon { background-color: #7860EB; }
+            &.water { background-color: #3399FF; }
+            &.electric { background-color: #F6C22D; }
+            &.fire { background-color: #FF4422; }
+            &.ice { background-color: #77DDFF; }
+            &.bug { background-color: #ABBC22; }
+            &.normal { background-color: #BAB7AA; }
+            &.grass { background-color: #77CC55; }
+            &.poison { background-color: #9F4A8E; }
+            &.psychic { background-color: #FF5599; }
+            &.rock { background-color: #BFAE68; }
+            &.ground { background-color: #DDBB55; }
+            &.ghost { background-color: #6565BA; }
+            &.flying { background-color: #6699FF; }
+
+        }
+
+    }
+
+}
+
+.is-gotten {
+    padding: 0;
+    background: none;
+    border: none;
+    position: absolute;
+    right: $small-space;
+    margin-top: -67px;
+
+}

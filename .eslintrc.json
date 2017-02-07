@@ -7,12 +7,13 @@
         "no-trailing-spaces": "off",
         "linebreak-style": "off",
         "indent": "off",
-        "strict": "off",
         "comma-dangle": "off",
         "no-console": "off",
         "no-param-reassign": "off"
     },
     "env": {
-        "browser": true
+        "browser": true,
+        "es6": true,
+        "node": true
     }
 }
