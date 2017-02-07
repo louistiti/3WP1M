@@ -49,7 +49,7 @@ Ce dépôt contient 3 projets en rapport avec une série sur [ma chaîne YouTube
 ## #1 Portfolio
 ### [LIEN](https://www.louistiti.fr/demo/3-projets-1-mois/portfolio/)
 
-![Démo portfolio](https://media.giphy.com/media/l3q2AD8N3pohZseac/source.gif)
+![Démo portfolio](https://media.giphy.com/media/l3q2DJhAtJzL4Gr16/source.gif)
 
 ## #2 Pokédex
 ### [LIEN](https://www.louistiti.fr/demo/3-projets-1-mois/pokedex/)
