@@ -55,7 +55,8 @@ This repository contains 3 projects relative to some videos on [my YouTube chann
 
 ![Pokédex demo](https://media.giphy.com/media/l3q2XXHpD96XaUEEM/source.gif)
 
-## #3 ?
+## #3 Speech synthesis
+### [LINK](https://www.louistiti.fr/demo/3-projets-1-mois/synthese-vocale/)
 
 # Author
 **Louis Grenard** : https://www.louistiti.fr
