@@ -56,7 +56,7 @@ Ce dépôt contient 3 projets en rapport avec une série sur [ma chaîne YouTube
 ![Démo pokédex](https://media.giphy.com/media/l3q2XXHpD96XaUEEM/source.gif)
 
 ## #3 Synthèse vocale
-### [LINK](https://www.louistiti.fr/demo/3-projets-1-mois/synthese-vocale/)
+### [LIEN](https://www.louistiti.fr/demo/3-projets-1-mois/synthese-vocale/)
 
 # Auteur
 **Louis Grenard** : https://www.louistiti.fr
