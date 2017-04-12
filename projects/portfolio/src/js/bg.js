@@ -13,7 +13,7 @@ const bg = () => {
             }
         }
 
-        background.classList = [];
+        background.className = '';
         background.classList.add(value);
     };
 
