@@ -5,14 +5,12 @@ const autoscale = () => {
 
     const projects = document.querySelectorAll('.project');
     let project = '';
-    let tmp = '';
 
     setInterval(() => {
-        if (tmp !== '' && tmp.classList.contains('scale')) {
-            tmp.classList.remove('scale');
+        if (project !== '' && project.classList.contains('scale')) {
+            project.classList.remove('scale');
         }
-        tmp = projects[Math.floor(Math.random() * projects.length)];
-        project = tmp;
+        project = projects[Math.floor(Math.random() * projects.length)];
 
         project.classList.add('scale');
     }, 6000);

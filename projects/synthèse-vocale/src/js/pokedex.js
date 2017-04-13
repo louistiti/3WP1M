@@ -113,8 +113,8 @@ class Pokedex {
         return dom;
     }
 
-    static talk(pokemons) {
-        pokemons = pokemons || document.querySelectorAll('.pokemon [data-description]');
+    static talk() {
+        const pokemons = document.querySelectorAll('.pokemon [data-description]');
 
         speechSynthesis.addEventListener('voiceschanged', () => {
             const voices = speechSynthesis.getVoices();

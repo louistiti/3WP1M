@@ -3,7 +3,7 @@ const bg = () => {
      * Change background
      */
 
-    const backgrounds = Array.from(document.querySelectorAll('.background'));
+    const backgrounds = document.querySelectorAll('.background');
     const background = document.querySelector('#background');
     const setBackground = (value) => {
         for (let i = 0; i < backgrounds.length; i += 1) {
